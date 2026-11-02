@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Shivrath Jijania — Growth, business development and technology go-to-market.">
+<title>Shivrath Jijania — Commercial thinking. Marketing execution.</title>
+<style>
+:root{--ink:#10121b;--paper:#f3f0e8;--white:#fffdf8;--blue:#344bff;--red:#f05a3d;--yellow:#e8e65a;--muted:#777873;--line:rgba(16,18,27,.18);--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}.wrap{width:min(1240px,calc(100% - 64px));margin:auto}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.09em;text-transform:uppercase}.brand{font-weight:800;letter-spacing:-.04em;font-size:17px}.navlinks{display:flex;gap:28px}.navlinks a:hover,.textlink:hover{color:var(--blue)}
+.hero{min-height:690px;padding:88px 0 70px;display:grid;grid-template-columns:1.2fr .8fr;gap:5vw;align-items:center;position:relative;overflow:hidden}.eyebrow,.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.16em;font-weight:700}.eyebrow{color:var(--blue);margin-bottom:28px}.hero h1{font-size:clamp(62px,8.5vw,122px);line-height:.88;letter-spacing:-.085em;margin:0;max-width:780px;font-weight:800}.hero h1 em{font-family:var(--serif);font-weight:400;letter-spacing:-.09em}.hero .sub{font-size:18px;line-height:1.55;max-width:510px;margin:34px 0 28px;color:#45464b}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 20px;background:var(--ink);color:white;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700}.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}.art{height:490px;position:relative;display:grid;place-items:center}.orb{position:absolute;border-radius:50%;mix-blend-mode:multiply}.orb.one{width:340px;height:340px;background:var(--blue);top:55px;right:9%;}.orb.two{width:240px;height:240px;background:var(--red);top:190px;right:39%;}.orb.three{width:160px;height:160px;background:var(--yellow);bottom:12px;right:12%}.artlabel{position:absolute;right:0;bottom:34px;font-family:var(--serif);font-style:italic;font-size:22px;transform:rotate(-8deg)}
+.ticker{background:var(--ink);color:var(--paper);padding:17px 0;font-size:11px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;overflow:hidden}.ticker span{padding:0 30px}.section{padding:110px 0;border-bottom:1px solid var(--line)}.sectionhead{display:flex;justify-content:space-between;align-items:flex-start;gap:30px;margin-bottom:58px}.sectionhead h2{font-size:clamp(42px,6vw,76px);line-height:.94;letter-spacing:-.075em;margin:0;max-width:700px}.sectionhead p{max-width:310px;color:#62636a;font-size:14px;line-height:1.6;margin:5px 0}.introgrid{display:grid;grid-template-columns:1fr 1fr;gap:9vw}.introgrid .lead{font-family:var(--serif);font-size:clamp(27px,3.5vw,44px);line-height:1.12;letter-spacing:-.035em;margin:0}.introgrid .body{font-size:15px;line-height:1.8;color:#55565c;max-width:510px}.statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:70px;border:1px solid var(--line)}.stat{background:var(--paper);padding:28px}.stat strong{display:block;font-size:54px;letter-spacing:-.08em}.stat small{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.worklist{display:grid;grid-template-columns:1fr 1fr;gap:22px}.project{min-height:360px;padding:30px;position:relative;overflow:hidden;background:var(--ink);color:var(--paper);display:flex;flex-direction:column;justify-content:space-between}.project:nth-child(2){background:var(--blue)}.project:nth-child(3){background:#ded8cc;color:var(--ink)}.project:nth-child(4){background:#e5e55d;color:var(--ink)}.project .num{font-size:11px;letter-spacing:.14em;opacity:.7}.project h3{font-size:clamp(34px,4vw,55px);line-height:.95;letter-spacing:-.07em;margin:28px 0 12px;max-width:480px}.project p{font-size:13px;line-height:1.6;max-width:390px;opacity:.8}.project .tag{font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin-top:22px}.shape{position:absolute;width:220px;height:220px;border-radius:50%;right:-55px;top:35px;border:1px solid currentColor;opacity:.25}.shape:after{content:"";position:absolute;inset:24px;border:1px solid currentColor;border-radius:50%}.project .bottom{position:relative;z-index:1}.project .watermark{position:absolute;right:20px;bottom:-42px;font-size:180px;line-height:1;font-weight:800;letter-spacing:-.1em;opacity:.09}
+.method{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.step{padding:26px 22px 30px 0;border-right:1px solid var(--line)}.step:not(:first-child){padding-left:22px}.step:last-child{border:0}.step b{font-size:11px;color:var(--blue);letter-spacing:.12em}.step h3{font-size:22px;letter-spacing:-.04em;margin:28px 0 10px}.step p{font-size:13px;line-height:1.65;color:#666;max-width:220px}
+.research{background:var(--ink);color:var(--paper)}.research .sectionhead p{color:#aaa}.researchgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:7vw;align-items:center}.researchcopy{font-family:var(--serif);font-size:clamp(30px,4vw,50px);line-height:1.08;letter-spacing:-.04em}.ecosystem{border:1px solid #555766;padding:28px;position:relative;min-height:330px;display:grid;grid-template-columns:1fr 1fr;gap:12px}.node{border:1px solid #6d6f7a;padding:17px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;min-height:76px}.node:nth-child(2),.node:nth-child(3){background:var(--blue);border-color:var(--blue)}.node:nth-child(4){background:var(--red);border-color:var(--red)}.node.wide{grid-column:span 2}.note{font-size:11px;color:#aaa;line-height:1.6;margin-top:18px}
+.experience{display:grid;grid-template-columns:1fr 2fr;gap:8vw}.experience h2{font-size:clamp(40px,5vw,65px);line-height:.95;letter-spacing:-.07em;margin:0}.timeline{border-top:1px solid var(--line)}.role{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}.role time{font-size:11px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}.role h3{font-size:18px;margin:0 0 5px;letter-spacing:-.03em}.role p{font-size:13px;color:#666;line-height:1.6;margin:0}
+.contact{background:var(--blue);color:white;padding:100px 0}.contact h2{font-size:clamp(54px,9vw,112px);line-height:.86;letter-spacing:-.09em;margin:0 0 38px;max-width:900px}.contact .btn{background:var(--paper);color:var(--ink)}.contact .btn.alt{background:transparent;color:white;border-color:rgba(255,255,255,.5)}.contactmeta{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap;margin-top:70px;padding-top:20px;border-top:1px solid rgba(255,255,255,.35);font-size:12px}.footer{padding:24px 0;display:flex;justify-content:space-between;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#777}
+@media(max-width:760px){.wrap{width:min(100% - 36px,1240px)}.nav{height:auto;padding:22px 0;align-items:flex-start}.navlinks{gap:12px;flex-wrap:wrap;justify-content:flex-end;max-width:60%;font-size:9px}.hero{grid-template-columns:1fr;padding:70px 0 30px;min-height:auto}.hero h1{font-size:clamp(58px,16vw,92px)}.art{height:340px}.orb.one{width:240px;height:240px;right:10%}.orb.two{width:170px;height:170px;top:125px;right:42%}.orb.three{width:115px;height:115px}.section{padding:72px 0}.sectionhead{display:block;margin-bottom:38px}.sectionhead p{margin-top:20px}.introgrid,.researchgrid,.experience{grid-template-columns:1fr;gap:30px}.statrow{grid-template-columns:1fr}.stat{padding:20px}.stat strong{font-size:42px}.worklist{grid-template-columns:1fr}.project{min-height:300px}.method{grid-template-columns:1fr 1fr}.step{padding:20px 12px 22px 0}.step:not(:first-child){padding-left:12px}.step:nth-child(2){border-right:0}.step:nth-child(3){padding-left:0;border-top:1px solid var(--line)}.step:nth-child(4){border-top:1px solid var(--line)}.role{grid-template-columns:100px 1fr;gap:12px}.contact{padding:75px 0}.contactmeta{display:grid}.footer{gap:12px;flex-wrap:wrap}}
+
+/* Visual upgrade: number-led editorial graphics */
+.hero-kpis{display:flex;gap:28px;margin-top:42px;flex-wrap:wrap}
+.hero-kpi{border-left:2px solid var(--blue);padding-left:12px}
+.hero-kpi strong{display:block;font-size:25px;letter-spacing:-.06em}
+.hero-kpi span{display:block;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.art{isolation:isolate}
+.art:before{content:"";position:absolute;width:390px;height:390px;border:1px solid rgba(16,18,27,.22);border-radius:50%;right:2%;top:35px;z-index:-1}
+.art:after{content:"01—04";position:absolute;left:3%;top:22%;font-size:10px;letter-spacing:.2em;writing-mode:vertical-rl;color:var(--muted)}
+.orb.one:after{content:"";position:absolute;inset:22px;border:1px solid rgba(255,255,255,.5);border-radius:50%}
+.project{min-height:430px}
+.project-visual{height:165px;position:relative;margin:18px 0 10px;display:flex;align-items:center;justify-content:center}
+.project-visual .big{font-size:clamp(88px,12vw,150px);font-weight:800;letter-spacing:-.12em;line-height:.8;opacity:.95}
+.project-visual .micro{position:absolute;font-size:9px;letter-spacing:.14em;text-transform:uppercase;right:8px;bottom:10px;opacity:.75}
+.project-visual .ring{position:absolute;width:145px;height:145px;border:1px solid currentColor;border-radius:50%;left:10%;top:2px}
+.project-visual .ring:before,.project-visual .ring:after{content:"";position:absolute;border:1px solid currentColor;border-radius:50%;inset:15px}
+.project-visual .ring:after{inset:32px}
+.project-visual .bars{display:flex;align-items:end;gap:8px;height:125px;position:absolute;right:13%;bottom:4px}
+.project-visual .bars i{display:block;width:18px;background:currentColor;opacity:.55}
+.project-visual .bars i:nth-child(1){height:35%}.project-visual .bars i:nth-child(2){height:62%}.project-visual .bars i:nth-child(3){height:48%}.project-visual .bars i:nth-child(4){height:90%}.project-visual .bars i:nth-child(5){height:72%}
+.project:nth-child(2) .project-visual .big{font-family:var(--serif);font-style:italic;font-weight:400}
+.project:nth-child(3) .project-visual .big{font-size:130px}
+.project:nth-child(4) .project-visual .big{font-size:110px}
+.metricstrip{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:58px}
+.metric{padding:24px 18px 24px 0;position:relative}
+.metric:not(:last-child):after{content:"";position:absolute;right:15px;top:20px;bottom:20px;width:1px;background:var(--line)}
+.metric strong{display:block;font-size:clamp(34px,4vw,54px);letter-spacing:-.09em;line-height:1}
+.metric span{display:block;margin-top:9px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);max-width:130px;line-height:1.5}
+.numberline{display:flex;align-items:center;gap:14px;margin:26px 0 0}
+.numberline b{font-size:11px;color:var(--blue);letter-spacing:.1em}
+.numberline span{height:1px;background:var(--line);flex:1}
+.experience-graphic{background:var(--ink);color:var(--paper);padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px;position:relative;overflow:hidden}
+.experience-graphic .year{font-size:clamp(52px,8vw,96px);letter-spacing:-.1em;line-height:.85}
+.experience-graphic .years-note{align-self:end;font-size:10px;letter-spacing:.13em;text-transform:uppercase;line-height:1.6;color:#c5c5cb}
+.experience-graphic .track{grid-column:span 2;height:7px;background:#484a57;display:flex;gap:3px}
+.experience-graphic .track i{display:block;background:var(--blue);height:100%;flex:1}
+.experience-graphic .track i:nth-child(2){background:var(--red)}.experience-graphic .track i:nth-child(3){background:var(--yellow)}
+.capability-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:48px}
+.capability{padding:20px;border:1px solid var(--line);min-height:145px;position:relative}
+.capability b{font-size:10px;color:var(--blue);letter-spacing:.14em}
+.capability strong{display:block;font-size:19px;letter-spacing:-.04em;margin-top:24px;max-width:190px}
+.capability small{display:block;color:var(--muted);font-size:10px;line-height:1.5;margin-top:8px}
+@media(max-width:760px){.hero-kpis{gap:18px}.metricstrip{grid-template-columns:1fr 1fr}.metric:nth-child(2):after{display:none}.metric:nth-child(3){border-top:1px solid var(--line)}.metric:nth-child(4){border-top:1px solid var(--line)}.capability-grid{grid-template-columns:1fr 1fr}.experience-graphic{padding:22px}}
+@media(max-width:430px){.capability-grid{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="#home">SJ<span style="color:var(--blue)">.</span></a>
+  <nav class="navlinks"><a href="#about">About</a><a href="#work">Selected work</a><a href="#approach">Approach</a><a href="#research">Research</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+<section class="wrap hero" id="home">
+  <div>
+    <div class="eyebrow">Growth · Business Development · Technology</div>
+    <h1>Commercial<br>thinking.<br><em>Marketing</em><br>execution.</h1>
+    <p class="sub">I work across growth, business development and brand strategy — connecting commercial priorities with marketing execution and emerging technology.</p>
+    <div class="actions"><a class="btn" href="#work">Explore selected work ↘</a><a class="btn alt" href="https://www.linkedin.com/in/shivrath-jijania-107842123/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div><div class="hero-kpis"><div class="hero-kpi"><strong>05+</strong><span>Years of experience</span></div><div class="hero-kpi"><strong>20+</strong><span>Brands supported</span></div><div class="hero-kpi"><strong>04</strong><span>Core disciplines</span></div></div>
+  </div>
+  <div class="art" aria-label="Abstract overlapping geometric forms"><div class="orb one"></div><div class="orb two"></div><div class="orb three"></div><div class="artlabel">Strategy meets execution</div></div>
+</section>
+<div class="ticker"><span>COMMERCIAL STRATEGY</span>✳<span>GROWTH MARKETING</span>✳<span>BUSINESS DEVELOPMENT</span>✳<span>TECHNOLOGY GO-TO-MARKET</span>✳<span>COMMERCIAL STRATEGY</span></div>
+<section class="wrap section" id="about">
+  <div class="sectionhead"><h2>Building the bridge between ideas and markets.</h2><p>A commercial and marketing professional with experience across D2C, e-commerce, B2B, technology, fashion, healthcare and education.</p></div>
+  <div class="introgrid">
+    <p class="lead">I combine commercial execution with strategic marketing — from finding opportunities and understanding customers to shaping campaigns, positioning and growth initiatives.</p>
+    <div class="body">My work has included building and operating a growth business, supporting client acquisition and account development, coordinating B2B campaign projects, and researching how AI is changing marketing and infrastructure. I am currently pursuing an MSc in Digital Marketing & Artificial Intelligence at SKEMA Business School.</div>
+  </div>
+  <div class="statrow"><div class="stat"><strong>5+</strong><small>Years across marketing and commercial roles</small></div><div class="stat"><strong>20+</strong><small>Brands supported through Elefy</small></div><div class="stat"><strong>4</strong><small>Core disciplines: growth, commercial, brand, technology</small></div></div>
+</section>
+<section class="wrap section" id="work">
+  <div class="sectionhead"><h2>Selected work.<br>Different contexts. One commercial lens.</h2><p>Selected engagements and initiatives, presented with a distinction between delivered work, academic project activity and independent research.</p></div>
+  <div class="worklist">
+    <article class="project"><div class="num">01 / GROWTH BUSINESS</div><div class="shape"></div><div class="project-visual"><span class="big">20<span style="font-size:.55em">+</span></span><span class="micro">Brands supported</span><div class="bars"><i></i><i></i><i></i><i></i><i></i></div></div><div class="bottom"><h3>Elefy — Building a growth practice</h3><p>Partnered in building and operating a growth business supporting D2C, e-commerce and B2B brands across multiple sectors.</p><div class="tag">Business development · Growth strategy · Digital marketing</div></div><div class="watermark">E</div></article>
+    <article class="project"><div class="num">02 / B2B CAMPAIGN PROJECT</div><div class="shape"></div><div class="project-visual"><span class="big">ABM</span><span class="micro">France × Italy</span><div class="ring"></div></div><div class="bottom"><h3>IGEL Technology × SKEMA</h3><p>Coordinated a four-person team developing an account-based lead-generation approach for public healthcare organisations in France and Italy.</p><div class="tag">Campaign coordination · Stakeholder mapping · ABM</div></div><div class="watermark">I</div></article>
+    <article class="project"><div class="num">03 / AI CONCEPT & RESEARCH</div><div class="shape"></div><div class="project-visual"><span class="big">AI</span><span class="micro">Concept / research</span><div class="ring"></div></div><div class="bottom"><h3>CulturaAI — Responsible advertising</h3><p>Explored an AI-assisted advertising concept focused on privacy-conscious workflows, cultural adaptation and explainable campaign support.</p><div class="tag">AI for marketing · Product research · Responsible data use</div></div><div class="watermark">C</div></article>
+    <article class="project"><div class="num">04 / INDEPENDENT RESEARCH</div><div class="shape"></div><div class="project-visual"><span class="big">GPU</span><span class="micro">Compute / power / data</span><div class="bars"><i></i><i></i><i></i><i></i><i></i></div></div><div class="bottom"><h3>Jijania.ai — AI infrastructure</h3><p>An independent research and content initiative exploring compute, GPU infrastructure, data centres, power constraints and commercial economics.</p><div class="tag">AI infrastructure · Market intelligence · GTM curiosity</div></div><div class="watermark">J</div></article>
+  </div>
+  <div class="metricstrip">
+    <div class="metric"><strong>20+</strong><span>Brands supported at Elefy</span></div>
+    <div class="metric"><strong>4</strong><span>People coordinated on IGEL project</span></div>
+    <div class="metric"><strong>32</strong><span>Target accounts in campaign plan*</span></div>
+    <div class="metric"><strong>18</strong><span>Decision-makers mapped in pilot plan*</span></div>
+  </div>
+  <div class="numberline"><b>* IGEL planning parameters</b><span></span><small style="font-size:10px;color:var(--muted)">Not campaign outcomes</small></div>
+</section>
+<section class="wrap section" id="approach">
+  <div class="sectionhead"><h2>A practical way of moving work forward.</h2><p>My approach connects the commercial question to a clear plan, coordinated execution and learning.</p></div>
+  <div class="method">
+    <div class="step"><b>01 / UNDERSTAND</b><h3>Context</h3><p>Clarify the business objective, audience, market and constraints.</p></div>
+    <div class="step"><b>02 / DISCOVER</b><h3>Opportunity</h3><p>Map stakeholders, customer needs, channels and growth barriers.</p></div>
+    <div class="step"><b>03 / SHAPE</b><h3>Direction</h3><p>Translate findings into positioning, messaging and a focused plan.</p></div>
+    <div class="step"><b>04 / COORDINATE</b><h3>Execution</h3><p>Align people, content and campaign activity; review what the work shows.</p></div>
+  </div>
+  <div class="capability-grid">
+    <div class="capability"><b>01 / COMMERCIAL</b><strong>Business development</strong><small>Prospecting · Client relationships · Account growth</small></div>
+    <div class="capability"><b>02 / MARKETING</b><strong>Growth & acquisition</strong><small>Paid media · SEO · Campaign strategy</small></div>
+    <div class="capability"><b>03 / BRAND</b><strong>Positioning & storytelling</strong><small>Brand identity · Content · Creative coordination</small></div>
+  </div>
+</section>
+<section class="research section" id="research">
+  <div class="wrap">
+    <div class="sectionhead"><h2>Curiosity beyond the marketing stack.</h2><p>Jijania.ai is an independent research and content initiative — not a claim of operating data-centre infrastructure or a live brokerage business.</p></div>
+    <div class="researchgrid">
+      <div class="researchcopy">Understanding the infrastructure behind the AI economy — and the commercial opportunities forming around it.</div>
+      <div><div class="ecosystem"><div class="node">GPU & compute</div><div class="node">Data centres</div><div class="node">Colocation & cloud</div><div class="node">Power & grid</div><div class="node wide">Inference · Workloads · Infrastructure economics</div></div><p class="note">Research themes: AI compute supply, GPU infrastructure, data-centre economics, energy constraints, cloud platforms and go-to-market models.</p></div>
+    </div>
+  </div>
+</section>
+<section class="wrap section">
+  <div class="experience">
+    <h2>Experience<br>across sectors.</h2>
+    <div>
+    <div class="experience-graphic"><div class="year">05<span style="color:var(--yellow)">+</span></div><div class="years-note">Years working across<br>commercial and marketing<br>contexts</div><div class="track"><i></i><i></i><i></i><i></i><i></i></div></div>
+    <div class="timeline">
+      <div class="role"><time>2026 — Present</time><div><h3>Founder — Jijania.ai</h3><p>Independent research and content initiative focused on AI infrastructure and commercial intelligence.</p></div></div>
+      <div class="role"><time>2026</time><div><h3>Campaign Manager & Project Coordinator — IGEL × SKEMA</h3><p>Coordinated a four-person B2B campaign project focused on public healthcare accounts in France and Italy.</p></div></div>
+      <div class="role"><time>2025 — 2026</time><div><h3>Growth Systems Consultant (AI & Strategy)</h3><p>Advisory work on growth bottlenecks, acquisition priorities, funnels, channels and workflows.</p></div></div>
+      <div class="role"><time>2025 — 2026</time><div><h3>Research & Incubation — CulturaAI</h3><p>Researched an AI-assisted advertising concept and responsible cross-platform workflows.</p></div></div>
+      <div class="role"><time>2022 — 2025</time><div><h3>Partner — Elefy</h3><p>Helped build and operate a growth business serving 20+ D2C, e-commerce and B2B brands.</p></div></div>
+      <div class="role"><time>2021 — 2022</time><div><h3>Business Development Executive — BYJU’S / Brand Manager — FashionTV India</h3><p>Experience spanning prospecting, product presentations, brand storytelling and digital campaigns.</p></div></div>
+      <div class="role"><time>2019 — 2020</time><div><h3>Marketing Internships — Translumina Therapeutics / Bookford Publications</h3><p>Early experience across medtech digital marketing, content and customer engagement.</p></div></div>
+    </div>
+    </div>
+  </div>
+</section>
+<section class="contact" id="contact"><div class="wrap">
+  <div class="eyebrow" style="color:var(--yellow)">Contact / Opportunities</div>
+  <h2>Let's make<br>something<br>move.</h2>
+  <div class="actions"><a class="btn" href="mailto:shivrathj@gmail.com">Email me ↗</a><a class="btn alt" href="https://www.linkedin.com/in/shivrath-jijania-107842123/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div>
+  <div class="contactmeta"><span>shivrathj@gmail.com</span><span>Phone: +33 6 52 62 57 53</span><span>WhatsApp: +91 81786 97582</span><span>France · Open to international opportunities</span></div>
+</div></section>
+</main>
+<footer class="wrap footer"><span>© 2026 Shivrath Jijania</span><span>Growth · Commercial · Technology</span><a href="#home">Back to top ↑</a></footer>
+</body></html>
